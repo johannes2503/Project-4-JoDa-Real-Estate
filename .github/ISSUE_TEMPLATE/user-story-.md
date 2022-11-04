@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-As a ** I can ** So that **
+As a **Site User** I can **Action** so that **Result**
