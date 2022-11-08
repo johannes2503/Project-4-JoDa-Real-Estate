@@ -1,1 +1,1 @@
-web: gunicorn joda-real-estate.wsgi
+web: gunicorn joda_real_estate.wsgi
