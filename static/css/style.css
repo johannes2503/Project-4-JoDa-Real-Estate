@@ -1,10 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300&display=swap');
 
+.container-fluid {
+    max-width: 1400px;
+}
+
 .navbar {
     font-family: 'Italiana', serif;
 }
 
 .navbar-nav {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #AEA885;
+}
+
+.hero {
+    width: 100%;
+    background-color: #0C4160;
+    height: 400px;
 }
