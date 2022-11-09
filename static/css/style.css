@@ -24,8 +24,13 @@
     color: #AEA885;
 }
 
-.hero {
-    width: 100%;
-    background-color: #0C4160;
-    height: 400px;
+#showcase-back {
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 600px;
+    background: url(../img/showcase-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 35% 65%;
+    border-radius: 10px;
 }
