@@ -1,11 +1,10 @@
 
-.link {
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300&display=swap');
+
+.navbar {
     font-family: 'Italiana', serif;
-    list-style: none;
-    
 }
 
-a {
-    text-decoration: none;
+.navbar-nav {
+    font-size: 1.5rem;
 }
