@@ -27,12 +27,11 @@
 </head>
 <body>
 
-    {% include 'partials/navbar.html' %}
+  {% include 'partials/navbar.html' %}
 
+  {% block content %}{% endblock %}
 
-    {% block content %}
+  {% include 'partials/footer.html' %}
 
-
-    {% endblock %}
 </body>
 </html>

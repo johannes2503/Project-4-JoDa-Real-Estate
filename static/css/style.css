@@ -125,12 +125,11 @@ h2 {
 
 .hr {
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .listing-attribute {
-    display: flex;
-
+    margin-top: 12px;
 }
 
 .img {
@@ -140,10 +139,62 @@ h2 {
 
 .listing-name {
     text-align: center;
-    height: 50%;
+    margin-top: 20px;
+    height: 40%;
 }
 
-.row {
-    height: 50%;
+.services {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-color: #0C4160;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.service-card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-color: #AEA885;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.service-icon {
+    color: #fff;
+    align-content: center;
+    margin-top: 10px;
+    
+    
+}
+
+h4 {
+    color: #fff;
+    font-family: 'Italiana', serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-size: 0.9rem;
+    margin: 20px;
+}
+
+#main-footer {
+    text-align: center;
+    font-family: 'Roboto', serif;
+    margin-top: 10px;
 }
 
