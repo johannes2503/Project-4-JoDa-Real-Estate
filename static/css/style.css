@@ -87,6 +87,8 @@ h1, p {
     color: #fff;
 }
 
+/* Latest Listings styling */
+
 h2 {
     font-family: 'Italiana', serif;
     text-align: center;
@@ -147,6 +149,8 @@ h2 {
     height: 40%;
 }
 
+/* Services styling */
+
 .services {
     display: flex;
     justify-content: space-around;
@@ -195,6 +199,8 @@ p {
     font-size: 0.9rem;
     margin: 20px;
 }
+
+/* Footer styling */
 
 #main-footer {
     text-align: center;

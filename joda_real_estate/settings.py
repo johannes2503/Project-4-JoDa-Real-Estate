@@ -35,15 +35,15 @@ ALLOWED_HOSTS = ['joda-real-estate.herokuapp.com', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin",
-    "django.contrib.auth",
-    "django.contrib.contenttypes",
-    "django.contrib.sessions",
-    "django.contrib.messages",
-    "cloudinary_storage",
-    "django.contrib.staticfiles",
-    "cloudinary",
-    "pages",
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
+    'pages',
 ]
 
 MIDDLEWARE = [
