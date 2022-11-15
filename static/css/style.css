@@ -50,8 +50,7 @@ body {
     width: 70%;
     height: 400px;
     margin: auto;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 
 h1, p {
@@ -62,6 +61,7 @@ h1, p {
 .search {
     max-width: 80%;
     margin: 2.5rem auto;
+    align-items: center;
 }
 
 .lead {
@@ -69,17 +69,22 @@ h1, p {
     font-size: 1rem;
 }
 
-.form-row {
-    display: flex;
-}
-
-
 .form-control {
     font-size: 0.8rem;
-    color: white;
+    color: black;
     opacity: 0.8;
-    background-color: #AEA885;
+    background-color: #fff;
     border: none;
+}
+
+.button {
+    margin-left: 10px;
+    width: 95%;
+    height: 30px;
+    background-color: #AEA885;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
 }
 
 h2 {
@@ -89,7 +94,6 @@ h2 {
 
 .featured-listings {
    width: 100%;
- 
    margin: auto;
 
 }
@@ -195,6 +199,6 @@ p {
 #main-footer {
     text-align: center;
     font-family: 'Roboto', serif;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
