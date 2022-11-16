@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'pages',
+    'listings',
+    'realtors',
 ]
 
 MIDDLEWARE = [
