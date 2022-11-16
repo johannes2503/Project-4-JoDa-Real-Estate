@@ -87,7 +87,7 @@ h1, p {
     color: #fff;
 }
 
-/* Latest Listings styling */
+/* Home Page - Latest Listings styling */
 
 h2 {
     font-family: 'Italiana', serif;
@@ -149,7 +149,7 @@ h2 {
     height: 40%;
 }
 
-/* Services styling */
+/* Home Page - Services styling */
 
 .services {
     display: flex;
@@ -197,7 +197,7 @@ p {
     text-align: center;
     font-family: 'Roboto', serif;
     font-size: 0.9rem;
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 /* Footer styling */
@@ -206,5 +206,56 @@ p {
     text-align: center;
     font-family: 'Roboto', serif;
     margin-top: 30px;
+}
+
+/* About Page - About-card styling */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 380px;
+    background-color: #0C4160;
+    border-radius: 10px;
+}
+
+.about-card {
+    width: 70%;
+    margin: 20px;
+}
+
+.realtor-card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 340px;
+    background-color: #AEA885;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.realtor-img {
+    justify-content: center;
+    border-radius: 50%;
+    width: 50%;
+    height: 40%;
+    margin: auto;
+}
+
+
+.about-h2 {
+    color: #fff;
+    margin-top: 40px;
+}
+
+h6 {
+    color: #fff;
+    font-family: 'Italiana', serif;
+    text-align: center;
+}
+
+.realtors {
+    display: flex;
+    justify-content: space-around;
 }
 

@@ -1,5 +1,47 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
+
+<section id="showcase">
+    <div class="showcase-inner">
+        <h1 class="text-center m-4">
+            Listings
+        </h1>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores
+            eveniet vel nostrum magnam
+            voluptatum tempore! Consectetur, id commodi!</p>
+    </div>
+</section>
+<section class="listings">
+    <div class="listings-container">
+        <div class="listing-card">
+            <div class="listing-attributes">
+                <div class="row listing-name">
+                    <h3>45 Drivewood Circle</h3>
+                    <h6>Nordwood MA, 01203</h6>
+                </div>
+                <hr class="hr">
+                <div class="row listing-attribute">
+                    <div class="col">
+                        <h6><i class="fa-solid fa-table-cells-large"></i> Size: </h6>
+                        <h6><i class="fa-solid fa-table-cells-large"></i> Size: 650</h6>
+                        <h6><i class="fa-solid fa-table-cells-large"></i> Size: 650</h6>
+                    </div>
+                    <div class="col">
+                        <h6><i class="fa-solid fa-table-cells-large"></i> Size: </h6>
+                        <h6><i class="fa-solid fa-table-cells-large"></i> Size: 650</h6>
+                        <h6><i class="fa-solid fa-table-cells-large"></i> Size: 650</h6>
+                    </div>
+                </div>
+            </div>
+            <img class="w-50 img" src="{% static 'img/house-1-outside.png' %}" alt="image of a house">
+        </div>
+        <div class="listing-card">
+    
+        </div>
+    </div>
+</section>
 
 {% endblock %}
