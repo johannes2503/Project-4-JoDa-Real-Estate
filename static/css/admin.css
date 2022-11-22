@@ -11,3 +11,13 @@
 div.breadcrumbs {
         background: #AEA885;
 }
+
+div.breadcrumbs a {
+    color: #fff;
+}
+
+.module h2,
+.module caption,
+.inline-group h2 {
+    background: #0C4160;
+}
