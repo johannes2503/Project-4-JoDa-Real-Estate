@@ -213,7 +213,7 @@ p {
 .about {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
     height: 380px;
     background-color: #0C4160;
     border-radius: 10px;
@@ -248,14 +248,21 @@ p {
     margin-top: 40px;
 }
 
-h6 {
+.realtor-h6 {
     color: #fff;
     font-family: 'Italiana', serif;
     text-align: center;
 }
 
 .realtors {
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
+}
+
+/* Listings Page - Styling */
+
+.listings {
+    margin-top: 40px;
 }
 
