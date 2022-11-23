@@ -48,7 +48,7 @@ body {
 .showcase-inner {
     background-color: rgba(12, 65, 96, 0.9);
     width: 70%;
-    height: 400px;
+    height: 500px;
     margin: auto;
     border-radius: 10px; 
 }
@@ -275,7 +275,7 @@ p {
 .realtor-h4, h6 {
     color: #fff;
     font-family: 'Italiana', serif;
-    text-align: center;
+   
 }
 
 .realtor-heading {
@@ -300,4 +300,20 @@ p {
 .no-listings {
     color: black;
 }
+
+/* Listing Page styling */
+
+.showcase-inner-listing {
+    background-color: rgba(12, 65, 96, 0.9);
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.listing {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 

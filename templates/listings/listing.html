@@ -6,4 +6,40 @@
 
 {% block content %}
 
+<section>
+    <div class="showcase-inner-listing">
+        <h1 class="text-center m-4">
+           {{ listing.title }}
+        </h1>
+        <div>
+            <h6> {{ listing.province }}, {{ listing.city }} </h6>
+        </div>
+        <p class="lead"> {{ listing.description }} </p>
+        <div class="listing">
+            <img class="img listing-img" src=" {{ listing.photo_main.url }} " alt="image of a house">
+        </div>
+        <div class="row listing-attribute">
+            <div class="col">
+                <h6><i class="fa-solid fa-table-cells-large"></i>Sqm: {{ listing.sqm | intcomma }}</h6>
+                <h6><i class="fa-solid fa-bed"></i> Beds: {{listing.bedrooms }} </h6>
+            </div>
+            <div class="col">
+                <h6><i class="fa-solid fa-car"></i> Garage: {{ listing.garage }}</h6>
+                <h6><i class="fa-solid fa-bath"></i> Baths: {{ listing.bathrooms }}</h6>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="row listing-attribute">
+            <div class="col">
+                <h6><i class="fa-solid fa-user"></i> {{ listing.realtor }}</h6>
+            </div>
+            <div class="col">
+                <h6><i class="fa-solid fa-clock"></i> {{ listing.list_date | naturalday }}</h6>
+            </div>
+    </div>
+</section>
+<section class="listing">
+
+</section>
+
 {% endblock %}
