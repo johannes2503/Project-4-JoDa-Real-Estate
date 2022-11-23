@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-
+from .choices import price_choices, bedroom_choices
 from .models import Listing
 
 
@@ -23,4 +23,11 @@ def listing(request, listing_id):
 
 
 def search(request):
-    return render(request, 'listings/search.html')
+
+    context = {
+
+        'price_choices': price_choices,
+        'bedroom_choices': bedroom_choices,
+    }
+
+    return render(request, 'listings/search.html', context)

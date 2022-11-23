@@ -1,1 +1,99 @@
-<h1>Search</h1>
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% load humanize %}
+
+{% block content %}
+
+<!-- Showcase -->
+<section id="showcase">
+    <div class="showcase-inner">
+        <h1 class="text-center m-4">
+            Property Search Made Easy
+        </h1>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores
+            eveniet vel nostrum magnam
+            voluptatum tempore! Consectetur, id commodi!</p>
+        <div class="search">
+            <form action=" {% url 'search' %} " class="row">
+                <!-- Form Row 1 -->
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <input type="text" name="keywords" class="form-control"
+                            placeholder="Keyword (Pool, Garage, etc)">
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <input type="text" name="city" class="form-control" placeholder="City">
+                    </div>
+                </div>
+                <!-- Form Row 2 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <select name="bedrooms" class="form-control">
+                            <option selected="true" disabled="disabled">Bedrooms (All)</option>
+                            {% for key,value in bedroom_choices.items %}
+                            <option value="{{ key }}">{{ value }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <select name="price" class="form-control" id="type">
+                            <option selected="true" disabled="disabled">Max Price (Any)</option>
+                            {% for key,value in price_choices.items %}
+                            <option value="{{ key }}">{{ value }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <button class="button mt-4" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="listings">
+    <h2 class="latest-listings">LISTINGS</h2>
+    <div class="listings-container">
+        {% if listings %}
+        {% for listing in listings %}
+        <div class="listing-card">
+            <div class="listing-attributes">
+                <a href=" {% url 'listing' listing.id %} ">
+                    <div class="row listing-name">
+                        <h3> {{ listing.title }} </h3>
+                        <h6> {{ listing.province }}, {{ listing.city }} </h6>
+                    </div>
+                </a>
+                <hr class="hr">
+                <div class="row listing-attribute">
+                    <div class="col">
+                        <h6><i class="fa-solid fa-table-cells-large"></i> Sqm: {{ listing.sqm | intcomma }}</h6>
+                        <h6><i class="fa-solid fa-bed"></i> Beds: {{listing.bedrooms }} </h6>
+                    </div>
+                    <div class="col">
+                        <h6><i class="fa-solid fa-car"></i> Garage: {{ listing.garage }} </h6>
+                        <h6><i class="fa-solid fa-bath"></i> Baths: {{ listing.bathrooms }} </h6>
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="row listing-attribute">
+                    <div class="col">
+                        <h6><i class="fa-solid fa-user"></i> {{ listing.realtor }} </h6>
+                    </div>
+                    <div class="col">
+                        <h6><i class="fa-solid fa-clock"></i> {{ listing.list_date | naturalday }} </h6>
+                    </div>
+                </div>
+            </div>
+            <img class="w-50 img" src=" {{ listing.photo_main.url }} " alt="image of a house">
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="col-md 12">
+            <h4 class="no-listings">No listings Available</h4>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from listings.choices import price_choices, bedroom_choices
 from listings.models import Listing
 from realtors.models import Realtor
 
@@ -10,6 +10,8 @@ def index(request):
 
     context = {
         'listings': listings,
+        'price_choices': price_choices,
+        'bedroom_choices': bedroom_choices,
     }
 
     return render(request, 'pages/index.html', context)
