@@ -94,6 +94,18 @@ h2 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:active {
+    color: #fff;
+}
+
+a:hover {
+    color: #AEA885;
+}
+
 .featured-listings {
    width: 100%;
    margin: auto;
@@ -118,7 +130,7 @@ h2 {
 .listing-card {
     display: flex;
     width: 45%;
-    height: 240px;
+    height: 210px;
     background-color: #0C4160;
     border-radius: 10px;
     font-family: 'Roboto', serif;
@@ -147,7 +159,6 @@ h2 {
 
 .listing-name {
     text-align: center;
-    margin-top: 20px;
     height: 40%;
 }
 
@@ -156,6 +167,7 @@ h2 {
 .services {
     display: flex;
     justify-content: space-around;
+    margin-top: 40px;
 }
 
 .service-card1 {

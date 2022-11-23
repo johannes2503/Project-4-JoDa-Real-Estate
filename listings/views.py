@@ -4,7 +4,7 @@ from .models import Listing
 
 
 def index(request):
-    listings = Listing.objects.all()
+    listings = Listing.objects.order_by('-list_date').filter(is_published=True)
     context = {
         'listings': listings
     }
@@ -12,7 +12,7 @@ def index(request):
     return render(request, 'listings/listings.html', context)
 
 
-def listing(request):
+def listing(request, listing_id):
     return render(request, 'listings/listing.html')
 
 
