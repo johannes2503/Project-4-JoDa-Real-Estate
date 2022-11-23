@@ -130,7 +130,7 @@ a:hover {
 .listing-card {
     display: flex;
     width: 45%;
-    height: 210px;
+    height: 230px;
     background-color: #0C4160;
     border-radius: 10px;
     font-family: 'Roboto', serif;
@@ -238,6 +238,10 @@ p {
     margin: 20px;
 }
 
+.realtor-h2 {
+    text-align: center;
+}
+
 .realtor-card {
     display: flex;
     flex-direction: column;
@@ -256,22 +260,35 @@ p {
     margin: auto;
 }
 
+.contact {
+    font-size: 0.7rem;
+    color: #fff;
+    margin: 20px;
+
+}
 
 .about-h2 {
     color: #fff;
     margin-top: 40px;
 }
 
-.realtor-h6 {
+.realtor-h4, h6 {
     color: #fff;
     font-family: 'Italiana', serif;
     text-align: center;
+}
+
+.realtor-heading {
+    margin-top: 40px;
 }
 
 .realtors {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+}
+.fa-solid {
+    margin:  5px;
 }
 
 /* Listings Page - Styling */

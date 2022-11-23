@@ -26,37 +26,48 @@
         facilisis vitae dui. Vestibulum vel nulla turpis.</p>
         <button class="button mt-4" type="submit">Contact Us</button>
     </div>
-    <div class="realtor-card">
-        <img class="realtor-img" src=" {% static 'img/realtor-1.png' %} " alt="">
-        <h4>Realtor Of The Month</h4>
-        <h6 class="realtor-h6">Alonso Hamilton</h6>
-        <p>eu efficitur lectus pretium. Nullam et auctor quam. Morbi enim ipsum, interdum
-        vel neque eget, commodo tincidunt ipsum. In aliquet luctu</p>
-    </div>
-</section>
-<section class="realtors">
-    <div class="realtor-card">
-        <img class="realtor-img" src=" {% static 'img/realtor-1.png' %} " alt="">
-        <h4>Realtor Of The Month</h4>
-        <h6 class="realtor-h6">Alonso Hamilton</h6>
-        <p>eu efficitur lectus pretium. Nullam et auctor quam. Morbi enim ipsum, interdum
-            vel neque eget, commodo tincidunt ipsum. In aliquet luctu</p>
-    </div>
-    <div class="realtor-card">
-        <img class="realtor-img" src=" {% static 'img/realtor-1.png' %} " alt="">
-        <h4>Realtor Of The Month</h4>
-        <h6 class="realtor-h6">Alonso Hamilton</h6>
-        <p>eu efficitur lectus pretium. Nullam et auctor quam. Morbi enim ipsum, interdum
-            vel neque eget, commodo tincidunt ipsum. In aliquet luctu</p>
-    </div>
-    <div class="realtor-card">
-        <img class="realtor-img" src=" {% static 'img/realtor-1.png' %} " alt="">
-        <h4>Realtor Of The Month</h4>
-        <h6 class="realtor-h6">Alonso Hamilton</h6>
-        <p>eu efficitur lectus pretium. Nullam et auctor quam. Morbi enim ipsum, interdum
-            vel neque eget, commodo tincidunt ipsum. In aliquet luctu</p>
-    </div>
+        {% if realtors %}
+        {% for realtor in mvp_realtors %}
+        <div class="realtor-card">
+            <img class="realtor-img" src=" {{ realtor.photo.url }} " alt="Image of realtor">
 
+            <h4 class="realtor-h4">Realtor Of the Month</h4>
+            <h6>{{ realtor.name }}</h6>
+            <hr class="hr">
+            <div class="contact">
+                <i class="fa-solid fa-phone"> {{ realtor.phone }}</i>
+                <i class="fa-solid fa-envelope"> {{ realtor.email }}</i>
+            </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <div class="col md 12">
+            <p>No Realtors Available</p>
+        </div>
+        {% endif %}
+</section>
+<div class="realtor-heading">
+    <h2>Realtors</h2>
+</div>
+<section class="realtors">
+    {% if realtors %}
+        {% for realtor in realtors %}
+        <div class="realtor-card">
+            <img class="realtor-img" src=" {{ realtor.photo.url }} " alt="Image of realtor">
+            <h4 class="realtor-h4"> {{ realtor.name }} </h4>
+            <h6>Realtor</h6>
+            <hr class="hr">
+            <div class="contact">
+                <i class="fa-solid fa-phone"> {{ realtor.phone }}</i>
+                <i class="fa-solid fa-envelope"> {{ realtor.email }}</i>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="col md 12">
+            <p>No Realtors Available</p>
+        </div>
+    {% endif %}
 </section>
 
 {% endblock %}
