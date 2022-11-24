@@ -40,24 +40,45 @@
                 </li>
             </ul>
             <ul class="navbar-nav w-25 mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a href=" {% url 'register' %} "
-                    {% if '/accounts/register' == request.path %}
-                    class="nav-link active"
-                    {% else %}
-                    class="nav-link"
-                    {% endif %}
-                    >REGISTER</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{% url 'login' %} "
-                    {% if '/accounts/login' == request.path %}
-                    class="nav-link active"
-                    {% else %}
-                    class="nav-link"
-                    {% endif %}
-                    >LOGIN</a>
-                </li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a href=" {% url 'dashboard' %} " 
+                        {% if '/accounts/dashboard' == request.path %} 
+                        class="nav-link active" 
+                        {% else %}
+                        class="nav-link" 
+                        {% endif %}
+                        >WELCOME ({{ user.username }})</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
+                            <i class="fas fa-sign-out-alt"></i> LOGOUT
+                        </a>
+                        <form action="{% url 'logout' %}" method="POST" id="logout">
+                            {% csrf_token %}
+                            <input type="hidden">
+                        </form>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a href=" {% url 'register' %} "
+                        {% if '/accounts/register' == request.path %}
+                        class="nav-link active"
+                        {% else %}
+                        class="nav-link"
+                        {% endif %}
+                        >REGISTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'login' %} "
+                        {% if '/accounts/login' == request.path %}
+                        class="nav-link active"
+                        {% else %}
+                        class="nav-link"
+                        {% endif %}
+                        >LOGIN</a>
+                    </li>
+                {% endif %}
             </ul>
         </div>
     </div>
