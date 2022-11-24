@@ -74,7 +74,7 @@ h1, p {
     color: black;
     opacity: 0.8;
     background-color: #fff;
-    border: none;
+    
 }
 
 .button {
@@ -322,3 +322,25 @@ p {
 }
 
 
+/* Register Page styling */
+
+#register {
+    background-color: #0C4160;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #AEA885;
+}
+
+.form-group {
+    font-family: 'Roboto', serif;
+    margin-top: 10px;
+}
+
+/* Login Page styling */
+
+#login {
+    background-color: #0C4160;
+    border-radius: 10px;
+}

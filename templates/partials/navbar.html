@@ -41,10 +41,22 @@
             </ul>
             <ul class="navbar-nav w-25 mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href=" {% url 'register' %} ">REGISTER</a>
+                    <a href=" {% url 'register' %} "
+                    {% if '/accounts/register' == request.path %}
+                    class="nav-link active"
+                    {% else %}
+                    class="nav-link"
+                    {% endif %}
+                    >REGISTER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %} ">LOGIN</a>
+                    <a href="{% url 'login' %} "
+                    {% if '/accounts/login' == request.path %}
+                    class="nav-link active"
+                    {% else %}
+                    class="nav-link"
+                    {% endif %}
+                    >LOGIN</a>
                 </li>
             </ul>
         </div>
