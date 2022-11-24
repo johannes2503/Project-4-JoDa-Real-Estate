@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'listings',
     'realtors',
     'accounts',
+    'contacts',
     'django.contrib.humanize',
 ]
 
