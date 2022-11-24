@@ -301,6 +301,11 @@ p {
     color: black;
 }
 
+.img-container {
+   width: 40%;
+}
+
+
 /* Listing Page styling */
 
 .showcase-inner-listing {
