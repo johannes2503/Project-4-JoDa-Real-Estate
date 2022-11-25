@@ -31,3 +31,14 @@ def contact(request):
         messages.success(
             request, 'Your request has been submitted, a realtor will get back to you soon')
         return redirect('/listings/'+listing_id)
+
+
+def edit_contact(request):
+    if request.method == 'POST':
+        phone = request.POST.get('phone')
+        message = request.POST.get('message')
+        contact = Contact(phone=phone, message=message)
+
+        contact.save()
+
+        return redirect('/accounts/dashboard.html')
