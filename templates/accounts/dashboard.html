@@ -3,17 +3,15 @@
 {% block title %} | User Dashboard {% endblock %}
 
 {% block content %}
-<section id="showcase-inner" class="py-5 text-white">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h1 class="display-4">User Dashboard</h1>
-                <p class="lead">Manage your JoDa Real Estate account</p>
-            </div>
-        </div>
+<section>
+    <div class="">
+        <h2 class="text-center m-4">
+            Dashboard
+        </h2>
+        <h5 class="lead">Here You can manage your listings inquiries</h5>
     </div>
-</section>
 
+</section>
 <!-- Alerts -->
 {% include 'partials/alerts.html' %}
 
@@ -27,7 +25,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">Id</th>
                             <th scope="col">Property</th>
                             <th></th>
                         </tr>
@@ -40,6 +38,9 @@
                             <td>
                                 <a class="btn btn-light" href="{% url 'listing' contact.listing_id %}">View Listing</a>
                             </td>
+                            <td>
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#inquiryModal">Edit Inquiry</button>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -51,4 +52,19 @@
         </div>
     </div>
 </section>
+<!-- Edit Modal -->
+<div class="modal fade" id="inquiryModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inquiryModalLabel">Edit Inquiry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                {{ contacts }}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
