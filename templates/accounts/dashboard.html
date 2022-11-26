@@ -63,7 +63,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="{% url 'contact' %}" method="POST">
+                    <form action=" {% url 'contact' contact.id %} " method="POST">
                         {{ contact.id }}
                         {% csrf_token %}
                         <div class="form-group">
@@ -75,7 +75,7 @@
                             <input type="text" name="phone" class="form-control" value="{{  contact.message }}">
                         </div>
                         <hr>
-                        <input type="submit" value="Send" class="button">
+                        <input type="submit" value="Update" class="button">
                     </form>
                 </div>
             </div>

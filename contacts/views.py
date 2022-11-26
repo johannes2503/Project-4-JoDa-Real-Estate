@@ -23,24 +23,11 @@ def contact(request):
                     request, 'You have already made an inquiry for this listing')
                 return redirect('/listings/'+listing_id)
 
-        contact = Contact(listing=listing, listing_id=listing_id, name=name,
-                          email=email, phone=phone, message=message, user_id=user_id)
+    contact = Contact(listing=listing, listing_id=listing_id, name=name,
+                      email=email, phone=phone, message=message, user_id=user_id)
 
-        contact.save()
+    contact.save()
 
-        messages.success(
-            request, 'Your request has been submitted, a realtor will get back to you soon')
-        return redirect('/listings/'+listing_id)
-
-
-# def edit_contact(request):
-    # if request.method == 'POST':
-    #     phone = request.POST.get('phone')
-    #     message = request.POST.get('message')
-    #     contact = Contact(phone=phone, message=message)
-
-    #     contact.save()
-
-    #     messages.success(
-    #         request, 'Your Inquiry has been updated')
-    #     return redirect('/accounts/dashboard')
+    messages.success(
+        request, 'Your request has been submitted, a realtor will get back to you soon')
+    return redirect('/listings/'+listing_id)
