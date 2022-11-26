@@ -34,10 +34,13 @@
                             <td>{{ contact.listing }}</td>
                             <td>{{ contact.message }}</td>
                             <td>
-                                <a class="btn btn-light" href="{% url 'listing' contact.listing_id %}">View Listing</a>
+                                <a class="btn btn-secondary" href="{% url 'listing' contact.listing_id %}">View Listing</a>
                             </td>
                             <td>
-                                <button class="button" data-bs-toggle="modal" data-bs-target="#inquiryModal{{contact.id}}">Edit Inquiry</button>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#inquiryModal{{contact.id}}">Update</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#delete_inquiryModal{{contact.id}}">Delete</button>
                             </td>
                         </tr>
                         {% endfor %}
@@ -58,13 +61,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="inquiryModalLabel">Edit Your Inquiry</h5>
+                    <h5 class="modal-title" id="inquiryModalLabel">Update</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
                     </button>
                 </div>
                 <div class="modal-body">
                     <form action=" {% url 'edit_contact' %} " method="POST">
-                        {{ contact.id }}
                         {% csrf_token %}
                         <input type="hidden" name="user_id" value="{{ user.id }}">
                         <input type="hidden" name="realtor_email" value="{{ listing.realtor.email }}">
@@ -81,13 +83,46 @@
                             <input name="message" class="form-control" value="{{ contact.message }}">
                         </div>
                         <hr>
-                        <input type="submit" value="Send" class="button">
+                        <input type="submit" value="Update" class="btn btn-secondary">
                     </form>
                 </div>
             </div>
         </div>
     </div>
     {% endfor %}
+{% endif %}
+
+<!-- Delete Inquiry Modal -->
+{% if contacts %}
+{% for contact in contacts %}
+<div class="modal fade" id="delete_inquiryModal{{contact.id}}" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inquiryModalLabel">Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action=" {% url 'delete_contact' %} " method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="user_id" value="{{ user.id }}">
+                    <input type="hidden" name="realtor_email" value="{{ listing.realtor.email }}">
+                    <input type="hidden" name="listing_id" value="{{ contact.listing_id }}">
+                    <input type="hidden" name="listing" class="form-control" value="{{ listing.title }}">
+                    <input type="hidden" name="name" class="form-control">
+                    <input type="hidden" name="email" class="form-control" value="{{ user.email }}" required>
+                    <input type="hidden" name="phone" class="form-control" value="{{ contact.phone }}">
+                    <input type="hidden" class="form-control" value="{{ contact.message }}">
+                    <hr>
+                    <input type="submit" value="Delete" class="btn btn-secondary">
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
 {% endif %}
 
 {% endblock %}

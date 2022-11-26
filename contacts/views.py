@@ -44,4 +44,18 @@ def edit_contact(request):
     update_contact.phone = phone
     update_contact.save()
 
+    messages.success(
+        request, 'Your inquiry has been updated')
+    return redirect('dashboard')
+
+
+def delete_contact(request):
+    if request.method == 'POST':
+        listing_id = request.POST['listing_id']
+
+    delete_contact = Contact.objects.get(listing_id=listing_id)
+    delete_contact.delete()
+
+    messages.success(
+        request, 'Your inquiry has been deleted')
     return redirect('dashboard')
