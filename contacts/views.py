@@ -33,12 +33,14 @@ def contact(request):
         return redirect('/listings/'+listing_id)
 
 
-def edit_contact(request):
-    if request.method == 'POST':
-        phone = request.POST.get('phone')
-        message = request.POST.get('message')
-        contact = Contact(phone=phone, message=message)
+# def edit_contact(request):
+    # if request.method == 'POST':
+    #     phone = request.POST.get('phone')
+    #     message = request.POST.get('message')
+    #     contact = Contact(phone=phone, message=message)
 
-        contact.save()
+    #     contact.save()
 
-        return redirect('/accounts/dashboard.html')
+    #     messages.success(
+    #         request, 'Your Inquiry has been updated')
+    #     return redirect('/accounts/dashboard')

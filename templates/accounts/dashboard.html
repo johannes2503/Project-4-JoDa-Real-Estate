@@ -63,7 +63,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="{% url 'edit_contact' %}" method="POST">
+                    <form action="{% url 'contact' %}" method="POST">
                         {{ contact.id }}
                         {% csrf_token %}
                         <div class="form-group">
