@@ -24,7 +24,7 @@
                         <tr>
                             <th scope="col">Id</th>
                             <th scope="col">Property</th>
-                            <th></th>
+                            <th scope="col">Message</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,7 +32,7 @@
                         <tr>
                             <td>{{ contact.id }}</td>
                             <td>{{ contact.listing }}</td>
-                            <td>{{ contact.message }}</td>
+                            <td class="td-message">{{ contact.message }}</td>
                             <td>
                                 <a class="btn btn-secondary" href="{% url 'listing' contact.listing_id %}">View Listing</a>
                             </td>
@@ -114,8 +114,9 @@
                     <input type="hidden" name="email" class="form-control" value="{{ user.email }}" required>
                     <input type="hidden" name="phone" class="form-control" value="{{ contact.phone }}">
                     <input type="hidden" class="form-control" value="{{ contact.message }}">
+                    <h5>Are you sure you want to delete your inquiry?</h5>
                     <hr>
-                    <input type="submit" value="Delete" class="btn btn-secondary">
+                    <input type="submit" value="Delete" class="btn btn-danger">
                     
                 </form>
             </div>

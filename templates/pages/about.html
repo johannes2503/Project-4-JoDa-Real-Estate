@@ -23,10 +23,7 @@
         <p class="about-p">Sed nec dui ut odio volutpat vulputate. Integer at odio a nunc rutrum mattis sit amet sed ex. Ut quis leo vel orci
         pulvinar lobortis. Sed blandit nec mi vitae blandit. Phasellus elementum lacinia ex, ac vestibulum turpis bibendum at.
         Duis imperdiet lorem quis arcu bibendum, eu efficitur lectus pretium. Nullam et auctor quam. Morbi enim ipsum, interdum
-        vel neque eget, commodo tincidunt ipsum. In aliquet luctus mollis. Aliquam pellentesque magna nibh, ut cursus nisi
-        faucibus in. Ut id erat ex. Nam pretium nunc nec arcu blandit malesuada. Etiam lorem tortor, ultrices vel pretium in,
-        facilisis vitae dui. Vestibulum vel nulla turpis.</p>
-        <button class="button mt-4" type="submit">Contact Us</button>
+        vel neque eget, commodo tincidunt ipsum.</p>
     </div>
         {% if realtors %}
         {% for realtor in mvp_realtors %}
@@ -34,7 +31,7 @@
             <img class="realtor-img" src=" {{ realtor.photo.url }} " alt="Image of realtor">
 
             <h4 class="realtor-h4">Realtor Of the Month</h4>
-            <h6>{{ realtor.name }}</h6>
+            <h6 class="realtor-h6">{{ realtor.name }}</h6>
             <hr class="hr">
             <div class="contact">
                 <i class="fa-solid fa-phone"> {{ realtor.phone }}</i>
@@ -57,7 +54,7 @@
         <div class="realtor-card">
             <img class="realtor-img" src=" {{ realtor.photo.url }} " alt="Image of realtor">
             <h4 class="realtor-h4"> {{ realtor.name }} </h4>
-            <h6>Realtor</h6>
+            <h6 class="realtor-h6">Realtor</h6>
             <hr class="hr">
             <div class="contact">
                 <i class="fa-solid fa-phone"> {{ realtor.phone }}</i>
