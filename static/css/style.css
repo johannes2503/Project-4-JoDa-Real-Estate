@@ -464,8 +464,62 @@ p {
 
 @media (max-width: 768px) {
     
-}
+    .showcase-inner {
+       
+        width: 90%;
+        height: 500px;
+        margin: auto;
+        border-radius: 10px;
+    }
 
-@media (max-width: 576px) {
-   
+    .button {
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    .listing-attributes {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .listing-attribute h6 {
+        margin-top: 6px;
+        font-size: 0.7rem;
+    }
+
+    .listing-name h3 {
+        margin-top: 5px;
+        font-size: 1.4rem;
+    }
+
+   .services {
+    flex-wrap: wrap;
+   }
+
+   .about {
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+   .about-card {
+    width: 100%;
+   }
+
+   .realtor-month {
+    width: 80%;
+   }
+
+   .realtor {
+    width: 80%;
+   }
+
+   td, thead {
+    font-size: 0.8rem;
+   }
+
+   .btn {
+    font-size: 0.8rem;
+   }
+
+
 }
