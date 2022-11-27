@@ -11,31 +11,30 @@
         <h1 class="text-center m-4">
             Meet Our Team
         </h1>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quas, asperiores
-            eveniet vel nostrum magnam
-            voluptatum tempore! Consectetur, id commodi!</p>
-        <button class="button mt-4" type="submit">View Our Listings</button>
+        <p class="lead">We have a great team here at JoDa Real Estate. They will see to it that your every need is met!</p>
+        <a href=" {% url 'listings' %} ">
+            <button class="button mt-4" type="submit">View Our Listings</button>
+        </a>
     </div>
 </section>
 <section class="about">
     <div class="about-card">
         <h2 class="about-h2">We Work For You</h2>
-        <p class="about-p">Sed nec dui ut odio volutpat vulputate. Integer at odio a nunc rutrum mattis sit amet sed ex. Ut quis leo vel orci
-        pulvinar lobortis. Sed blandit nec mi vitae blandit. Phasellus elementum lacinia ex, ac vestibulum turpis bibendum at.
-        Duis imperdiet lorem quis arcu bibendum, eu efficitur lectus pretium. Nullam et auctor quam. Morbi enim ipsum, interdum
-        vel neque eget, commodo tincidunt ipsum.</p>
+        <p class="about-p">If you choose to work with us finding your dream home, we can guarantee the we will do everyting we can to ensure a pleasant experience.</p>
     </div>
         {% if realtors %}
         {% for realtor in mvp_realtors %}
-        <div class="realtor-card">
-            <img class="realtor-img" src=" {{ realtor.photo.url }} " alt="Image of realtor">
-
-            <h4 class="realtor-h4">Realtor Of the Month</h4>
-            <h6 class="realtor-h6">{{ realtor.name }}</h6>
-            <hr class="hr">
-            <div class="contact">
-                <i class="fa-solid fa-phone"> {{ realtor.phone }}</i>
-                <i class="fa-solid fa-envelope"> {{ realtor.email }}</i>
+        <div class="card realtor-month">
+            <img class="card-img-top" src="{{ realtor.photo.url }}" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Realtor Of The Month</h5>
+                <h6 class="text-secondary">{{ realtor.name }}</h6>
+                <i class="fa-solid fa-phone  fs-6 text-secondary">
+                    <h6 class="text-secondary">{{ realtor.phone }}</h6>
+                </i>
+                <i class="fa-solid fa-envelope text-secondary">
+                    <h6 class="text-secondary">{{ realtor.email }}</h6>
+                </i>
             </div>
         </div>
         {% endfor %}
@@ -51,14 +50,15 @@
 <section class="realtors">
     {% if realtors %}
         {% for realtor in realtors %}
-        <div class="realtor-card">
-            <img class="realtor-img" src=" {{ realtor.photo.url }} " alt="Image of realtor">
-            <h4 class="realtor-h4"> {{ realtor.name }} </h4>
-            <h6 class="realtor-h6">Realtor</h6>
-            <hr class="hr">
-            <div class="contact">
-                <i class="fa-solid fa-phone"> {{ realtor.phone }}</i>
-                <i class="fa-solid fa-envelope"> {{ realtor.email }}</i>
+        <div class="card realtor m-3">
+            <img class="card-img-top" src="{{ realtor.photo.url }}" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Property Realtor</h5>
+                <h6 class="text-secondary">{{ realtor.name }}</h6>
+                <i class="fa-solid fa-phone fs-6 text-secondary"></i>
+                <h6 class="text-secondary">{{ realtor.phone }}</h6>
+                <i class="fa-solid fa-envelope text-secondary"></i>
+                <h6 class="text-secondary">{{ realtor.email }}</h6>
             </div>
         </div>
         {% endfor %}

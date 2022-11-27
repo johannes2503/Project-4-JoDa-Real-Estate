@@ -227,7 +227,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    height: 380px;
+    height: 480px;
     background-color: #0C4160;
     border-radius: 10px;
 }
@@ -236,43 +236,26 @@ p {
     width: 70%;
     margin: 20px;
 }
-
-.realtor-h2 {
-    text-align: center;
-}
-
-.realtor-h6 {
-    text-align: center;
-}
-
-.realtor-card {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 340px;
-    background-color: #AEA885;
-    border-radius: 10px;
-    margin: 20px;
-}
-
-.realtor-img {
-    justify-content: center;
-    border-radius: 50%;
-    width: 50%;
-    height: 40%;
-    margin: auto;
-}
-
-.contact {
-    font-size: 0.7rem;
-    color: #fff;
-    margin: 20px;
-
-}
-
 .about-h2 {
     color: #fff;
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-p {
+    font-size: 1.5rem;
+}
+
+.realtor-month {
+    width: 30%;
+    
+}
+.realtor {
+    width: 20%;
+}
+
+.card-title {
+    font-family: 'Roboto', serif;
 }
 
 .realtor-h4, h6 {
@@ -288,11 +271,10 @@ p {
 .realtors {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-.fa-solid {
-    margin:  5px;
-}
+
 
 /* Listings Page - Styling */
 
@@ -322,6 +304,16 @@ p {
     display: flex;
     justify-content: space-around;
 
+}
+
+.realtor-card-listing {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 340px;
+    background-color: #AEA885;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 
@@ -435,23 +427,37 @@ p {
         margin-top: 20px;
     }
 
+    .about {
+        height: 80%;
+    }
+
     .about-card {
         width: 60%;
         margin: 20px;
     }
 
-    .realtor-card {
-        width: 30%;
-        height: 340px;
-        margin: 20px;
-    }
-
-    .contact {
-        font-size: 0.55rem;
-    }
-
     .td-message {
         display: none;
+    }
+
+    .realtor {
+        width: 28%;
+    }
+
+    .realtor-card-listing {
+        
+        width: 80%;
+        height: 32%;
+        
+    }
+
+    .realtor-card-listing .contact {
+        
+        margin: 10px;
+        width: 30%;
+        height: 340px;
+    
+
     }
 
 }
