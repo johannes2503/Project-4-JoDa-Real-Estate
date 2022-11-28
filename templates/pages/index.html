@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <select name="bedrooms" class="form-control">
-                            <option selected="true" disabled="disabled">Bedrooms (All)</option>
+                            <option disabled="disabled">Bedrooms (All)</option>
                             {% for key,value in bedroom_choices.items %}
                             <option value="{{ key }}">{{ value }}</option>
                             {% endfor %}
@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-md-6">
                         <select name="price" class="form-control" id="type">
-                            <option selected="true" disabled="disabled">Max Price (Any)</option>
+                            <option disabled="disabled">Max Price (Any)</option>
                             {% for key,value in price_choices.items %}
                             <option value="{{ key }}">{{ value }}</option>
                             {% endfor %}
