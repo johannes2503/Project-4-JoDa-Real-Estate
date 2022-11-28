@@ -59,7 +59,7 @@ For my fourth project, I wanted to create an authentic, practical and useful rea
 
 The very first design prototype was created using [Figma](https://figma.com/). I created a very basic wire frame which so I could visually understand where elements could sit and to also get a general feel of how the website would look before I had started to develop it. This is an extremely important part of the design process as it allows me to understand what I need to do to achieve the final end product. Spending a couple of hours doing this saves a lot of time in the development process.<br /><br />
 
-![Figma Start Prototype](static/img/readme/Figma-prototype.png.png)
+![Figma Start Prototype](static/img/readme/Figma-prototype.png)
 
 [Back to top](#contents)
 
@@ -185,10 +185,6 @@ The website for JoDa Real Estate has been designed to be a fully encompassing we
 <details><summary><b>Login</b></summary>
 
 ![Home Image1](static/img/readme/Login.png)
-
-</details><br />
-
-</details><br />
 
 [Back to top](#contents)
 
