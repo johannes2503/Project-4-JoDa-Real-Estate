@@ -12,16 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <!-- CSS only -->
+    <!-- CSS bootstrap -->
     <link rel="stylesheet" href=" {% static '/css/bootstrap.css' %} ">
     <!-- JavaScript Bundle with Popper -->
     <script src="{% static 'js/bootstrap.js' %} "></script>
-
+    <!-- CSS file location -->
     <link rel="stylesheet" href=" {% static '/css/style.css' %} ">
-
     <!-- Lightbox -->
     <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
-
     <!-- font awesome Script -->
     <script src="https://kit.fontawesome.com/5ec5c06d06.js" crossorigin="anonymous"></script>
 
@@ -34,7 +32,7 @@
   {% block content %}{% endblock %}
 
   {% include 'partials/footer.html' %}
-
+  <!-- JavaScript files -->
   <script src="{% static 'js/main.js' %} "></script>
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
