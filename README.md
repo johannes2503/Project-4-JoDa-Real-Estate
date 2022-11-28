@@ -4,8 +4,6 @@ JoDa Real Estate is a fictional real estate company I made up for this project. 
 
 You can view the live site here - <a href="https://joda-real-estate.herokuapp.com/" target="_blank" rel="noopener">JoDa Real Estate</a>
 
-![Cafe Manbo responsive design](static/images/readme-images/responsive-design-preview-image.png)
-
 # Contents
 
 - [**Objective**](#objective)
