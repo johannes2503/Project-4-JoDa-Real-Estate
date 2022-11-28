@@ -305,15 +305,15 @@ The project was deployed to [Heroku](https://www.heroku.com). The deployment pro
 
 - After you have successfully navigated to [Heroku](https://dashboard.heroku.com/apps), created an account and logged in, click 'New' and then click 'Create new app'</br></br>
 
-![Deployment Step 7](static/images/readme-images/deploy-7.png)</br></br>
+![Deployment Step 1](static/img/readme/deploy-7.png</br></br>
 
 - Pick a suitable app name and choose your preferred region. Since I live in the Iceland, I have chosen Europe as my region</br></br>
 
-![Deployment Step 8](static/images/readme-images/deploy-8.png)</br></br>
+![Deployment Step 2](static/img/readme/deploy-8.png)</br></br>
 
 - Inside your application, click the 'Resources' tab and then search for 'Heroku Postgres'. Attach this to your project as a database by clicking 'Submit Order Form'. If done correctly, you should see the below image.</br></br>
 
-![Deployment Step 9](static/images/readme-images/deploy-9.png)</br></br>
+![Deployment Step 3](static/img/readme/deploy-9.png)</br></br>
 
 - If you click the Heroku Postgres link, it will then open a new page which has all the information about your new Heroku Postgres database. This is where we will find our credentials. Click 'Settings' and then click 'View Credentials' and you will then see the below image (with your details not mine)
 
@@ -337,7 +337,7 @@ The project was deployed to [Heroku](https://www.heroku.com). The deployment pro
 - The fonts came from [Google fonts](https://fonts.google.com/).
 - The colour palette was found on [Behance](https://www.behance.net/).
 - The icons came from [Font Awesome](https://fontawesome.com/).
-- [Figma](https://figma.com/).
+- [Figma](https://figma.com/) was used for wireframing.
 
 ### Media
 
