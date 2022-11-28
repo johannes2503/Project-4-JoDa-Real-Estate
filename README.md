@@ -178,6 +178,8 @@ The website for JoDa Real Estate has been designed to be a fully encompassing we
 
 ![Home Image1](static/img/readme/register.png)
 
+</details><br />
+
 - ### Login
 
   - The Login page contains a form for the user to login.
@@ -185,6 +187,8 @@ The website for JoDa Real Estate has been designed to be a fully encompassing we
 <details><summary><b>Login</b></summary>
 
 ![Home Image1](static/img/readme/Login.png)
+
+</details><br />
 
 [Back to top](#contents)
 
