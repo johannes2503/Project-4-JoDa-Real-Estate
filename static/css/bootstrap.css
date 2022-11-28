@@ -88,15 +88,15 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
+  
   background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
+
 }
 
 hr {
@@ -164,10 +164,10 @@ p {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
+  
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
+  
   text-decoration-skip-ink: none;
 }
 
@@ -256,7 +256,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: var(--bs-font-monospace);
+  
   font-size: 1em;
 }
 
@@ -317,7 +317,7 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+  
 }
 
 thead,
@@ -368,10 +368,6 @@ select {
 }
 select:disabled {
   opacity: 1;
-}
-
-[list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
-  display: none !important;
 }
 
 button,
@@ -4196,7 +4192,7 @@ textarea.form-control-lg {
   --bs-card-cap-padding-y: 0.5rem;
   --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
-  --bs-card-cap-color: ;
+
   
   
   --bs-card-bg: #fff;
