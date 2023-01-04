@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@100;300&display=swap');
+
+body {
+    max-width: 95%;
+    margin: auto;
+}
+
+/* Navbar styling */
+
+.container-fluid {
+    max-width: 100%;
+}
+
+.navbar {
+    font-family: 'Italiana', serif;
+    background-color: #fff;
+}
+
+.navbar-nav {
+    font-size: 1.15rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #AEA885;
+}
+
+/* Showcase styling */
+
+#showcase {
+    margin: 0 auto;
+    height: 600px;
+    background: url(../img/showcase-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 35% 65%;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+.showcase-inner {
+    background-color: rgba(12, 65, 96, 0.9);
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px; 
+}
+
+h1, p {
+    font-family: 'Italiana', serif;
+    color: white;
+}
+
+.search {
+    max-width: 80%;
+    margin: 2.5rem auto;
+    align-items: center;
+}
+
+.lead {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.form-control {
+    font-size: 0.8rem;
+    color: black;
+    opacity: 0.8;
+    background-color: #fff;
+    
+}
+
+.button {
+    margin-left: 10px;
+    width: 95%;
+    height: 30px;
+    background-color: #AEA885;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+/* Home Page - Latest Listings styling */
+
+h2 {
+    font-family: 'Italiana', serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:active {
+    color: #fff;
+}
+
+a:hover {
+    color: #AEA885;
+}
+
+.featured-listings {
+   width: 100%;
+   margin: auto;
+
+}
+
+.latest-listings {
+    margin-top: 40px;
+    height: 80px;
+}
+
+.listings-container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.listing-card {
+    display: flex;
+    width: 48%;
+    height: 230px;
+    background-color: #0C4160;
+    border-radius: 10px;
+    font-family: 'Roboto', serif;
+    color: #fff;
+
+}
+
+.listing-attributes {
+   margin-top: 10px;
+   margin-left: 20px;
+}
+
+.hr {
+    width: 90%;
+    margin: auto;
+}
+
+.listing-attribute {
+    margin-top: 12px;
+}
+
+.img {
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.listing-name {
+    text-align: center;
+    height: 40%;
+}
+
+/* Home Page - Services styling */
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.service-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-color: #0C4160;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.service-card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-color: #AEA885;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.service-icon {
+    color: #fff;
+    align-content: center;
+    margin-top: 10px;
+    
+    
+}
+
+h4 {
+    color: #fff;
+    font-family: 'Italiana', serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-size: 0.9rem;
+    margin: 10px 20px;
+}
+
+/* Footer styling */
+
+#main-footer {
+    text-align: center;
+    font-family: 'Roboto', serif;
+    margin-top: 30px;
+}
+
+/* About Page - About-card styling */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 480px;
+    background-color: #0C4160;
+    border-radius: 10px;
+}
+
+.about-card {
+    width: 70%;
+    margin: 20px;
+}
+.about-h2 {
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about-p {
+    font-size: 1.5rem;
+}
+
+.realtor-month {
+    width: 30%;
+    
+}
+.realtor {
+    width: 20%;
+}
+
+.card-title {
+    font-family: 'Roboto', serif;
+}
+
+.realtor-h4, h6 {
+    color: #fff;
+    font-family: 'Italiana', serif;
+   
+}
+
+.realtor-heading {
+    margin-top: 40px;
+}
+
+.realtors {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Listings Page - Styling */
+
+.listings {
+    margin-top: 40px;
+}
+
+.no-listings {
+    color: black;
+}
+
+.img-container {
+   width: 40%;
+}
+
+
+/* Listing Page styling */
+
+.showcase-inner-listing {
+    background-color: rgba(12, 65, 96, 0.9);
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.listing {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.realtor-card-listing {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 340px;
+    background-color: #AEA885;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+/* Register Page styling */
+
+#register {
+    background-color: #0C4160;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #AEA885;
+}
+
+.form-group {
+    font-family: 'Roboto', serif;
+    margin-top: 10px;
+}
+
+/* Login Page styling */
+
+#login {
+    background-color: #0C4160;
+    border-radius: 10px;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1330px) {
+    .navbar-nav {
+            font-size: 1rem;
+        }
+
+    .listing-card {
+        width: 47%;
+    }
+
+    .listing-attributes {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .listing-attribute h6 {
+        margin-top: 6px;
+        font-size: 0.65rem;
+    }
+
+    .listing-name h3 {
+        margin-top: 5px;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .button {
+        width: 90%;
+    }
+    
+    .listings-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        }
+
+    .listing-card {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .listing-attributes {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .listing-attribute h6 {
+        margin-top: 6px;
+        font-size: 1rem;
+    }
+
+    .listing-name h3 {
+        margin-top: 5px;
+        font-size: 1.8rem;
+    }
+
+    .listing-attributes {
+        width: 50%;
+    }
+
+    .service-card1 {
+        font-size: 0.8rem;
+        width: 200px;
+        
+    }
+
+    .service-card2 {
+        font-size: 0.8rem;
+        width: 200px;
+       
+    }
+    
+    .service-p {
+        font-size: 0.7rem;   }
+    
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .service-icon {
+        margin-top: 20px;
+    }
+
+    .about {
+        height: 80%;
+    }
+
+    .about-card {
+        width: 60%;
+        margin: 20px;
+    }
+
+    .td-message {
+        display: none;
+    }
+
+    .realtor {
+        width: 28%;
+    }
+
+    .realtor-card-listing {
+        
+        width: 80%;
+        height: 32%;
+        
+    }
+
+    .realtor-card-listing .contact {
+        
+        margin: 10px;
+        width: 30%;
+        height: 340px;
+    
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .showcase-inner {
+       
+        width: 90%;
+        height: 500px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .button {
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    .listing-attributes {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .listing-attribute h6 {
+        margin-top: 6px;
+        font-size: 0.7rem;
+    }
+
+    .listing-name h3 {
+        margin-top: 5px;
+        font-size: 1.4rem;
+    }
+
+   .services {
+    flex-wrap: wrap;
+   }
+
+   .about {
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+   .about-card {
+    width: 100%;
+   }
+
+   .realtor-month {
+    width: 80%;
+   }
+
+   .realtor {
+    width: 80%;
+   }
+
+   td, thead {
+    font-size: 0.8rem;
+   }
+
+   .btn {
+    font-size: 0.8rem;
+   }
+
+
+}
