@@ -93,7 +93,7 @@ html.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../img/lightbox/prev.png) left 48% no-repeat;
+  background: url("https://res.cloudinary.com/dxwsm96zw/image/upload/v1672949121/static/img/lightbox/prev.png") left 48% no-repeat;
   
   opacity: 0;
   
@@ -109,7 +109,7 @@ html.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../img/lightbox/next.png) right 48% no-repeat;
+  background: url("https://res.cloudinary.com/dxwsm96zw/image/upload/v1672949123/static/img/lightbox/next.png") right 48% no-repeat;
   
   opacity: 0;
   
@@ -161,7 +161,7 @@ html.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../img/lightbox/close.png) top right no-repeat;
+  background: url("https://res.cloudinary.com/dxwsm96zw/image/upload/v1672949124/static/img/lightbox/close.png") top right no-repeat;
   text-align: right;
   outline: 0;
   
