@@ -37,7 +37,7 @@ body {
 #showcase {
     margin: 0 auto;
     height: 600px;
-    background: url(../img/showcase-back.png);
+    background: url(../img/showcaseback.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 35% 65%;
