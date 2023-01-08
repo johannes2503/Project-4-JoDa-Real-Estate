@@ -245,11 +245,60 @@ All the libraries used for this project are located in the requirements.txt file
 
   ![CSS Validation](static/img/readme/CSS-validation.png)
 
-* ### PEP8 Validation Image (accounts/views.py)
+* ### CI linter Validation Image (accounts/views.py)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
-  ![CI Linter Validation (accounts/apps.py)](static/img/readme/tests/accounts_views.png)
+  ![CI Linter Validation (accounts/views.py)](static/img/readme/tests/accounts_views.png)
+    </details><br />
+
+* ### CI linter Validation Image (contacts/views.py)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (contacts/views.py)](static/img/readme/tests/contacs_views.png)
+    </details><br />
+
+* ### CI linter Validation Image (contacts/models.py)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (contacts/models.py)](static/img/readme/tests/contacts_models.png)
+    </details><br />
+
+* ### CI linter Validation Image (joda_real_estate/settings.py.py)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (joda_real_estate/settings.py)](static/img/readme/tests/joda_real_estate_settings.png)
+    </details><br />
+
+* ### CI linter Validation Image (listings/admin.py)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (listings/admin.py)](static/img/readme/tests/listings_admin.png)
+    </details><br />
+
+* ### CI linter Validation Image (listings/models)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (listings/models.py)](static/img/readme/tests/listings_models.png)
+    </details><br />
+
+  - ### CI linter Validation Image (listings/views)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (listings/views.py)](static/img/readme/tests/listings_views.png)
+    </details><br />
+
+  - ### CI linter Validation Image (realtors/views)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (realtors/views.py)](static/img/readme/tests/realtors_views.png)
     </details><br />
 
 - ## Manual Testing
