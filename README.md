@@ -235,7 +235,7 @@ All the libraries used for this project are located in the requirements.txt file
 
 - ## Code Validation
 
-  - JoDa Real Estate has been validated by using online validation tools [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+  - JoDa Real Estate has been validated by using online validation tools [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and the [CI python Linter Online Validator](https://pep8ci.herokuapp.com/).
 
 - ### HTML Validation Image
 
@@ -244,6 +244,13 @@ All the libraries used for this project are located in the requirements.txt file
 - ### CSS Validation Image
 
   ![CSS Validation](static/img/readme/CSS-validation.png)
+
+* ### PEP8 Validation Image (accounts/views.py)
+
+    <details><summary><b>CI Linter Validation Image</b></summary>
+
+  ![CI Linter Validation (accounts/apps.py)](static/img/readme/tests/accounts_views.png)
+    </details><br />
 
 - ## Manual Testing
 

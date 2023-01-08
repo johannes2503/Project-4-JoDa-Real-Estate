@@ -27,7 +27,9 @@ def register(request):
                 else:
                     # Looks good
                     user = User.objects.create_user(
-                        username=username, password=password, email=email, first_name=first_name, last_name=last_name)
+                        username=username, password=password,
+                        email=email, first_name=first_name,
+                        last_name=last_name)
                     user.save()
                     messages.success(
                         request, 'You are now registered and can log in')
@@ -72,3 +74,4 @@ def dashboard(request):
         'contacts': user_contacts
     }
     return render(request, 'accounts/dashboard.html', context)
+

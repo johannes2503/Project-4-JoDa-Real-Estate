@@ -32,7 +32,7 @@ def search(request):
             queryset_list = queryset_list.filter(
                 description__icontains=keywords)
 
-     # Bedrooms
+    # Bedrooms
     if 'bedrooms' in request.GET:
         bedrooms = request.GET['bedrooms']
         if bedrooms:
