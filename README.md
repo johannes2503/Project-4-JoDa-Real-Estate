@@ -287,14 +287,14 @@ All the libraries used for this project are located in the requirements.txt file
   ![CI Linter Validation (listings/models.py)](static/img/readme/tests/listings_models.png)
     </details><br />
 
-  - ### CI linter Validation Image (listings/views)
+* ### CI linter Validation Image (listings/views)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
   ![CI Linter Validation (listings/views.py)](static/img/readme/tests/listings_views.png)
     </details><br />
 
-  - ### CI linter Validation Image (realtors/views)
+* ### CI linter Validation Image (realtors/views)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
