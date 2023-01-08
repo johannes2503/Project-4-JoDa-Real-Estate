@@ -245,35 +245,35 @@ All the libraries used for this project are located in the requirements.txt file
 
   ![CSS Validation](static/img/readme/CSS-validation.png)
 
-* ### CI linter Validation Image (accounts/views.py)
+* ### CI linter Validation Image (accounts/views)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
   ![CI Linter Validation (accounts/views.py)](static/img/readme/tests/accounts_views.png)
     </details><br />
 
-* ### CI linter Validation Image (contacts/views.py)
+* ### CI linter Validation Image (contacts/views)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
   ![CI Linter Validation (contacts/views.py)](static/img/readme/tests/contacs_views.png)
     </details><br />
 
-* ### CI linter Validation Image (contacts/models.py)
+* ### CI linter Validation Image (contacts/models)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
   ![CI Linter Validation (contacts/models.py)](static/img/readme/tests/contacts_models.png)
     </details><br />
 
-* ### CI linter Validation Image (joda_real_estate/settings.py.py)
+* ### CI linter Validation Image (joda_real_estate/settings)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
   ![CI Linter Validation (joda_real_estate/settings.py)](static/img/readme/tests/joda_real_estate_settings.png)
     </details><br />
 
-* ### CI linter Validation Image (listings/admin.py)
+* ### CI linter Validation Image (listings/admin)
 
     <details><summary><b>CI Linter Validation Image</b></summary>
 
