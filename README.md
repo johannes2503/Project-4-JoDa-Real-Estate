@@ -301,6 +301,21 @@ All the libraries used for this project are located in the requirements.txt file
   ![CI Linter Validation (realtors/views.py)](static/img/readme/tests/realtors_views.png)
     </details><br />
 
+* ## Lighthouse Testing
+
+  - Furthermore the website has been through the [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Lighthouse Testing which tests the website for the following:
+
+    - Performance - How the page performs whilst loading.
+    - Accessibility - Is the site accessible for all players and how can it be improved.
+    - Best Practices - Site conforms to industry best practices.
+    - SEO - Search Engine Optimisation. Is the site optimised for search engine result rankings.
+
+  - The lighthouse tests were conducted in incognito/private windows due to extensions interfering with the results.<br /><br />
+
+* ### Chrome Desktop Lighthouse Result - Home Page
+
+  ![Chrome Desktop Lighthouse](static/img/readme/lighthouse_test.png)
+
 - ## Manual Testing
 
   In addition to the other tests, I have conducted a manual check list for myself to carry out to make sure that everything is working as intended.
